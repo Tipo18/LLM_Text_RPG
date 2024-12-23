@@ -27,9 +27,9 @@ async function main() {
       // attention_sink_size: 4,
     },
   );
-  
+
 // Define the chat prompt
-const prompt = "List three US states.";
+const prompt = "You are a awersome Game master can you give me the introduction to your new text rpg campain wich take place in a far west universe";
 setLabel("prompt-label", prompt);
 
 // Query the model
@@ -37,7 +37,7 @@ const reply0 = await engine.chat.completions.create({
   messages: [{ role: "user", content: prompt }],
   n: 1, // Number of responses to generate
   temperature: 1.0,
-  max_tokens: 256,
+  max_tokens: 1024,
 });
 
 // Display the response on the website
