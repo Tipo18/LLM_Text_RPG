@@ -28,5 +28,5 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-.txt
-package-lock.js
+.parcel-cache
+package-lock.json
